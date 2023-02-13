@@ -1,7 +1,7 @@
 # Logit-an-easy-to-understand-guide
 Logistic Regression an-easy-to-understand-guide with examples in Python and R.
 
-```.
+```..
 ├── 2022-11-version-0.9-logit.html
 ├── 2022-11-version-A-logit_cache
 │   └── html
@@ -20,11 +20,11 @@ Logistic Regression an-easy-to-understand-guide with examples in Python and R.
 │       ├── unnamed-chunk-2-1.png
 │       ├── unnamed-chunk-3-1.png
 │       └── unnamed-chunk-4-1.png
-├── 3d planes.ipynb
 ├── assets
 │   ├── 02-eda.rmd
 │   ├── 04-logit.rmd
 │   ├── 2022-11-version-A-logit.rmd
+│   ├── 3d planes.ipynb
 │   ├── datasets-logit.csv
 │   ├── datasets-logit.xls
 │   ├── eda-datasets-logit.rmd
@@ -43,9 +43,18 @@ Logistic Regression an-easy-to-understand-guide with examples in Python and R.
 │   ├── world-pop-1950-2100.cc.jpg
 │   ├── world-pop-1950-2100.jpg
 │   └── world-population-change-mikkel-juul-jensen.jpg
+├── data
+│   └── raw
+│       ├── archive.zip
+│       ├── data
+│       └── data~
 ├── files.txt
 ├── intro-2-logit.pdf
+├── LICENSE
 ├── Logit-Python.ipynb
-└── logit-text2.odt
+├── logit-text2.odt
+└── README.md
+
+7 directories, 45 files
 ```
 5 directories, 40 files
