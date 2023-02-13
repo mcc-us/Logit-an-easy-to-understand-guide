@@ -1,0 +1,75 @@
+---
+title: "test2.rmd"
+author: "mcc"
+date: "2022-11-17"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r}
+curve(dnorm(x,0,1))
+curve(dnorm(x,0,1),xlim=c(-3,3),main='Normal Density')
+cord.x <- c(-3)
+cord.y <- c(0)
+cord.x <- c(cord.x,-3) 
+cord.y <- c(cord.y,dnorm(-3))
+
+cord.x <- c(cord.x,-2,-2)
+cord.y <- c(cord.y,dnorm(-2),0)
+polygon(cord.x,cord.y,col='skyblue')
+```
+
+```{r}
+# Data
+x <- c(-4:4, 4:-4)
+y <- c(1, 1, 1, 1, 1, 1, 1, 1,
+       7, 2, 1, 4, 3, 1, 4, 5)
+
+# Line plot
+plot(x, y, type = "l")
+
+# Polygon
+polygon(x, y, col = "#65BFFF")
+
+# Points
+points(x, y, pch = 19) 
+
+```
+
+```{r}
+# Libraries
+library(ggplot2)
+
+# create data
+xValue <- 1:50
+yValue <- cumsum(rnorm(50))
+data <- data.frame(xValue,yValue)
+
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_area()
+```
+
+```{r}
+# Libraries
+library(ggplot2)
+library(hrbrthemes)
+
+# create data
+xValue <- 1:10
+yValue <- abs(cumsum(rnorm(10)))
+data <- data.frame(xValue,yValue)
+
+# Plot
+ggplot(data, aes(x=xValue, y=yValue)) +
+  geom_area( fill="#69b3a2", alpha=0.4) +
+  geom_line(color="#69b3a2", size=2) +
+  geom_point(size=3, color="#69b3a2") +
+  theme_ipsum() +
+  ggtitle("Evolution of something")
+```
+
