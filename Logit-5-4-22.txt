@@ -1,0 +1,27 @@
+---
+title: Logit NOTES
+author: MCC
+tags: R logit regression logistic odds "log-odds" "variable selection"
+
+
+
+Logistic regression is used to obtain odds ratio in the presence of more than one explanatory variable. The procedure is quite similar to multiple linear regression, with the exception that the response variable is binomial. The result is the impact of each variable on the odds ratio of the observed event of interest. The main advantage is to avoid confounding effects by analyzing the association of all variables together.
+
+the number of explanatory variables increases, the complexity of these calculations can become nearly impossible to handle. Additionally, Mantel-Haenszel OR, like the simple OR, admits only categorical explanatory variables.
+
+>Understanding logistic regression analysis, Sandro Sperandei, School of Physical Education and Sports – Federal University of Rio de Janeiro, Rio de Janeiro, Brazil
+
+
+Regression analysis can be used for three things:
+
+1. Forecasting the effects or impact of specific changes. For example, if a manufacturing company wants to forecast how many units of a particular product they need to produce in order to meet the current demand.
+2. Forecasting trends and future values. For example, how much will the stock price of  Lufthansa be in 6 months from now?
+3. Determining the strength of different predictors—or, in other words, assessing how much of an impact the independent variable(s) has on a dependent variable. For example, if a soft drinks company is sponsoring a football match, they might want to determine if the ads being displayed during the match have accounted for any increase in sales.
+
+
+Logistic regression assumptions
+
+1. The dependent variable is binary or dichotomous—i.e. It fits into one of two clear-cut categories. This applies to binary logistic regression, which is the type of logistic regression we’ve discussed so far. We’ll explore some other types of logistic regression in section five.
+1. There should be no, or very little, multicollinearity between the predictor variables—in other words, the predictor variables (or the independent variables) should be independent of each other. This means that there should not be a high correlation between the independent variables. In statistics, certain tests can be used to calculate the correlation between the predictor variables; if you’re interested in learning more about those, just search “Spearman’s rank correlation coefficient” or “the Pearson correlation coefficient.”
+1. The independent variables should be linearly related to the log odds. If you’re not familiar with log odds, we’ve included a brief explanation below.
+1. Logistic regression requires fairly large sample sizes—the larger the sample size, the more reliable (and powerful) you can expect the results of your analysis to be.

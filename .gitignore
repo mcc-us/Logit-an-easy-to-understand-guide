@@ -6,8 +6,21 @@ __pycache__/
 # C extensions
 *.so
 
-# Misc
+# Misc & Markdown Related
 *.md~
+.gitignore~
+
+## R & RStudio Misc
+*.rmd
+*.RData
+*.rdb
+*.rdx
+html/
+figure-html/
+
+## Latex
+latex/
+figure-latex/
 
 # Distribution / packaging
 .Python
